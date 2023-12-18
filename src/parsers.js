@@ -1,5 +1,5 @@
-import path from 'node:path'
-import fs from 'node:fs'
+import path from 'node:path';
+import fs from 'node:fs';
 
 export const jsonParser = (filepath1, filepath2) => {
   const path1 = path.resolve(filepath1);
