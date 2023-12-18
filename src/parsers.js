@@ -1,7 +1,7 @@
 import path from 'node:path';
 import fs from 'node:fs';
 
-export const jsonParser = (filepath1, filepath2) => {
+const jsonParser = (filepath1, filepath2) => {
   const path1 = path.resolve(filepath1);
   const path2 = path.resolve(filepath2);
 
@@ -13,3 +13,5 @@ export const jsonParser = (filepath1, filepath2) => {
 
   return [dataOfFile1, dataOfFile2];
 };
+
+export default jsonParser;

@@ -1,6 +1,6 @@
-import { jsonParser } from "./parsers.js";
+import jsonParser from './parsers';
 
-export const diff = (fileName1, fileName2) => {
+const diff = (fileName1, fileName2) => {
   const [data1, data2] = jsonParser(fileName1, fileName2);
 
   const keys1 = Object.keys(data1);
@@ -45,3 +45,5 @@ export const diff = (fileName1, fileName2) => {
 
   console.log(`{\n${formattedList}\n}`);
 };
+
+export default diff;
