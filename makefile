@@ -1,4 +1,7 @@
-install_deps:
+install: install-deps
+	npx simple-git-hooks
+
+install-deps:
 	npm ci
 
 lint:
@@ -6,3 +9,6 @@ lint:
 
 test:
 	npx -n --experimental-vm-modules jest
+
+test-coverage: 
+	npx jest --coverage
