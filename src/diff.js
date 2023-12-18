@@ -45,4 +45,3 @@ export const diff = (fileName1, fileName2) => {
 
   console.log(`{\n${formattedList}\n}`);
 };
-
