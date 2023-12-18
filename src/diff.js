@@ -1,4 +1,4 @@
-import jsonParser from './parsers';
+import jsonParser from './parsers.js';
 
 const diff = (fileName1, fileName2) => {
   const [data1, data2] = jsonParser(fileName1, fileName2);
@@ -43,7 +43,7 @@ const diff = (fileName1, fileName2) => {
 
   const formattedList = allList.join('\n');
 
-  console.log(`{\n${formattedList}\n}`);
+  return (`{\n${formattedList}\n}`);
 };
 
 export default diff;

@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { program } from 'commander';
-import diff from '../src/diff';
+import diff from '../src/diff.js';
 
 program
   .version('0.0.1')
