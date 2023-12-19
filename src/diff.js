@@ -1,7 +1,7 @@
-import jsonParser from './parsers.js';
+import parser from './parsers.js';
 
 const diff = (fileName1, fileName2) => {
-  const [data1, data2] = jsonParser(fileName1, fileName2);
+  const [data1, data2] = parser(fileName1, fileName2);
 
   const keys1 = Object.keys(data1);
   const keys2 = Object.keys(data2);
